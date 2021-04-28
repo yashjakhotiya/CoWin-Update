@@ -16,7 +16,7 @@ def is_last_modified_updated():
     script_path = get_script_path(r.get(url).content)
     js_url = url + '/' + script_path
     last_modified_time = r.get(js_url).headers['last-modified']
-    if last_modified_time != 'Wed, 28 Apr 2021 05:01:24 GMT':
+    if last_modified_time != 'Wed, 28 Apr 2021 10:16:31 GMT':
         return True
     return False
 
